@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --grey: #546E7A;
+    --grayBox: #F0F1F2;
+    --grayText: #9A9A9A;
+    --lightGray: #B0BEC5;
+    --blue: #0C59F2;
+    --red: #E90202;
+    --green: #315A1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================  SECTION INCIAL  ================================ */
+
+.inicial {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+}
+.leftSide {
+    flex: 1;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(./assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.leftSide .textArea {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.rightSide .logo {
+    width: 180px;
+    text-align: start;
+    /* font-size: 40px; */
+    margin: 30px 0px 10px 30px;
+}
+.rightSide .art {
+    max-height: 300px;
+    width: auto;
+    height: 80%;
+    margin: auto;
+}
+.rightSide a {
+    margin: auto;
+    height: 80px;
+    width: 300px;
+}
+.initialButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+}
+/* ================================  SECTION FORM  ================================ */
+
+/* ================================  FORMULÁRIOS  ================================ */
+
+.form {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.form img {
+    /* font-size: 40px; */
+    text-align: start;
+}
+.formArea {
+    width: 90%;
+    max-width: 1140px;
+
+}
+
+.inputArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ================================  INPUTS  ================================ */
+label {
+    display: flex;
+    justify-content: start;
+}
+input {
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    width: 80%;
+    max-width: 300px;
+    text-align: end;
+}
+
+fieldset {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    padding: 5px 0px 10px 10px;
+    border: 3px solid var(--lightGray);
+    display: flex;
+    /* gap: 3px; */
+}
+fieldset .unidades {
+    display: flex;
+    margin-left: 3px;
+    align-items: center;
+    color: var(--grey);
+    font-size: 14px;
+}
+input:focus {
+    outline: 0;
+}
+
+/* ================================  BOTÕES  ================================ */
+.buttonArea {
+    margin-top: 20px;
+    width: 450px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    width: 186px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+}
+
+button.positive {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+button.negative {
+    background-color: var(--red);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ================================  SECTION RESULTADOS  ================================ */
+
+.resultados {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.resultArea {
+    width: 90%;
+    max-width: 1140px;
+}
+
+.resultados img {
+    /* font-size: 40px; */
+    text-align: start;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--grayBox);
+    width: 100%;
+    max-width: 100%;
+    height: 90%;
+    min-height: 125px;
+
+    border-radius: 10px;
+    
+}
+
+.box.valorBox {
+    background-color: var(--blue);
+}
+.box.valorBox h3 {
+    color: #F0F1F2;
+}
+.box.valorBox h2 {
+    color: #FFFFFF;
+}
+.box.lucroBox {
+    background-color: var(--green);
+}
+.box.lucroBox h3 {
+    color: #F0F1F2;
+}
+.box.lucroBox h2 {
+    color: #FFFFFF;
+}
+
+.box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--grayText);
+}
+.box h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #000000;
+}
+.boxFlex {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxFlex p {
+    font-size: 14px;
+    font-weight: normal;
+}
+.resultBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* ================================  RESPONSIVIDADE  ================================ */
+
+
+@media (max-width: 850px) {
+    .inicial {
+        flex-direction: column;
+    }
+    .leftSide {
+        width: 100vw;
+        height: 50vh;
+    }
+    .inputArea {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    label {
+        display: flex;
+        justify-content: center;
+    }
+    .resultBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 100vw;
+    }
+    .formArea {
+        max-width: 100%;
+    
+    }
+    label {
+        display: flex;
+        justify-content: center;
+    }
+    fieldset {
+        max-width: 100%;
+    }
+    input {
+        max-width: 100%;
+    }
+
+    .inputArea {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    button {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    .buttonArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    form h2 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .box h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora SeiPMOC</title>
+</head>
+<body>
+    <section class="form">
+        
+        <div class="formArea">
+            <!-- <h1>SeiPMOC</h1> -->
+            <img class="logo" src="./assets/SeiPMOC.png" alt="Logo">
+            <form action="">
+                <h2>Elaboração Documental - PMOC</h2>
+                <div class="inputArea">
+                    <label for="visitaTecnicaAvaliacao">
+                        <fieldset>
+                            <legend>Visita Técnica Avaliação</legend>
+                            <input type="number" name="visitaTecnicaAvaliacao" id="visitaTecnicaAvaliacao" placeholder="3" >
+                            <div class="unidades">horas</div>
+                        </fieldset>
+                    </label>
+                    <label for="montagemDoContrato">
+                            <fieldset>
+                                <legend>Montagem do Contrato</legend>
+                                <input type="number" name="montagemDoContrato" id="montagemDoContrato" placeholder="2" >
+                                <div class="unidades">horas</div>
+                            </fieldset>
+                    </label>
+                    <label for="montagemDoPmoc">
+                            <fieldset>
+                                <legend>Montagem do PMOC</legend>
+                                <input type="number" name="montagemDoPmoc" id="montagemDoPmoc" placeholder="3" >
+                                <div class="unidades">horas</div>
+                            </fieldset>
+                    </label>
+                    <label for="emissaoArtTrt">
+                        <fieldset>
+                            <legend>Emissão ART/TRT</legend>
+                            <input type="number" name="emissaoArtTrt" id="emissaoArtTrt" placeholder="89.52" >
+                            <div class="unidades">reais</div>
+                        </fieldset>
+                    </label>
+                    <label for="materialGrafico">
+                        <fieldset>
+                            <legend>Material Gráfico</legend>
+                            <input type="number" name="materialGrafico" id="materialGrafico" placeholder="100.00" >
+                            <div class="unidades">reais</div>
+                        </fieldset>
+                    </label>
+                    <label for="envioDocumentosClientes">
+                        <fieldset>
+                            <legend>Envio Documentos para Clientes</legend>
+                            <input type="number" name="envioDocumentosClientes" id="envioDocumentosClientes" placeholder="20.00" >
+                            <div class="unidades">reais</div>
+                        </fieldset>
+                    </label>
+                </div>
+                <h2>Custos Operacionais</h2>
+                <div class="inputArea">
+                    <label for="valorResponsavelTecnico">
+                        <fieldset>
+                            <legend>Valor Hora Responsável Técnico</legend>
+                            <input type="number" name="valorResponsavelTecnico" id="valorResponsavelTecnico" placeholder="50.00" >
+                            <div class="unidades">reais</div>
+                        </fieldset>
+                    </label>
+                    <label for="valorHoraManutencao">
+                            <fieldset>
+                                <legend>Valor Hora Manutenção</legend>
+                                <input type="number" name="valorHoraManutencao" id="valorHoraManutencao" placeholder="25.00" >
+                                <div class="unidades">reais</div>
+                            </fieldset>
+                    </label>
+                    <label for="valorDeslocamentoVisita">
+                            <fieldset>
+                                <legend>Valor Deslocamento por Visita</legend>
+                                <input type="number" name="valorDeslocamentoVisita" id="valorDeslocamentoVisita" placeholder="50.00" >
+                                <div class="unidades">reais</div>
+                            </fieldset>
+                    </label>
+                    <label for="lucroDesejado">
+                        <fieldset>
+                            <legend>Lucro Desejado</legend>
+                            <input type="number" name="lucroDesejado" id="lucroDesejado" placeholder="15.00" >
+                            <div class="unidades">%</div>
+                        </fieldset>
+                    </label>
+                    <label for="porcentagemComissao">
+                        <fieldset>
+                            <legend>Porcentagem Comissão</legend>
+                            <input type="number" name="porcentagemComissao" id="porcentagemComissao" placeholder="7.00" >
+                            <div class="unidades">%</div>
+                        </fieldset>
+                    </label>
+                    <label for="porcentagemNotaFiscal">
+                        <fieldset>
+                            <legend>Porcentagem Imposto Nota Fiscal</legend>
+                            <input type="number" name="porcentagemNotaFiscal" id="porcentagemNotaFiscal" placeholder="8.00" >
+                            <div class="unidades">%</div>
+                        </fieldset>
+                    </label>
+                </div>
+                <h2>Acompanhamento do Contrato - RT</h2>
+                <div class="inputArea">
+                    <label for="visitasRT">
+                        <fieldset>
+                            <legend>Visitas</legend>
+                            <input type="number" name="visitasRT" id="visitasRT" placeholder="12" >
+                            <div class="unidades">visitas</div>
+                        </fieldset>
+                    </label>
+                    <label for="tempoVisitaRT">
+                        <fieldset>
+                            <legend>Tempo por Visita</legend>
+                            <input type="number" name="tempoVisitaRT" id="tempoVisitaRT" placeholder="2" >
+                            <div class="unidades">horas</div>
+                        </fieldset>
+                    </label>
+                    <label for="tempoElaboracaoRelatorios">
+                            <fieldset>
+                                <legend>Tempo Elaboração Relatórios</legend>
+                                <input type="number" name="tempoElaboracaoRelatorios" id="tempoElaboracaoRelatorios" placeholder="3" >
+                                <div class="unidades">horas</div>
+                            </fieldset>
+                    </label>
+                </div>
+                <h2>Manutenção / Análise Laboratorial</h2>
+                <div class="inputArea">
+                    <label for="visitasManutencao">
+                        <fieldset>
+                            <legend>Visitas</legend>
+                            <input type="number" name="visitasManutencao" id="visitasManutencao" placeholder="12" >
+                            <div class="unidades">visitas</div>
+                        </fieldset>
+                    </label>
+                    <label for="tempoVisitaManutencao">
+                        <fieldset>
+                            <legend>Tempo por Visita</legend>
+                            <input type="number" name="tempoVisitaManutencao" id="tempoVisitaManutencao" placeholder="2" >
+                            <div class="unidades">horas</div>
+                        </fieldset>
+                    </label>
+                    <label for="tempoPreenchimentoOss">
+                            <fieldset>
+                                <legend>Tempo Preenchimento OSs</legend>
+                                <input type="number" name="tempoPreenchimentoOss" id="tempoPreenchimentoOss" placeholder="3" >
+                                <div class="unidades">horas</div>
+                            </fieldset>
+                    </label>
+                    <label for="materiaisProdutos">
+                        <fieldset>
+                            <legend>Materiais e Produtos - Valor Anual</legend>
+                            <input type="number" name="materiaisProdutos" id="materiaisProdutos" placeholder="250" >
+                            <div class="unidades">reais</div>
+                        </fieldset>
+                    </label>
+                    <label for="analiseLaboratorial">
+                        <fieldset>
+                            <legend>Análise Laboratorial - Total Contrato</legend>
+                            <input type="number" name="analiseLaboratorial" id="analiseLaboratorial" placeholder="1000" >
+                            <div class="unidades">reias</div>
+                        </fieldset>
+                    </label>
+                </div>
+
+            </form>
+        </div>
+        <div class="buttonArea">
+            <button onclick="limpaValores()" class="negative">Limpar</button>
+            <button onclick="Display.results(); calculo()" class="positive">Calcular</button>
+        </div>
+    </section>
+
+    <section class="resultados">
+        <div class="resultArea">
+            <!-- <h1>SeiPMOC</h1> -->
+            <img class="logo" src="./assets/SeiPMOC.png" alt="Logo">
+            <div class="resultBox">
+                <div class="box">
+                    <h3>CUSTO ELABORAÇÃO</h3>
+                    <div class="boxFlex">
+                        <div>
+                            <p id="custoElaboracaoRT"">Responsável Técnico: R$ 298,05</p>
+                            <p id="custoEmissaoARTTRT">Emissão ART/TRT: R$ 298,05</p>
+                            <p id="custoEnvioDoc">Envio Documentação: R$ 298,05</p>
+                            <p id="custoMaterialGraf">Material Gráfico: R$ 298,05</p>
+                        </div>
+                        <h2 id="custoElaboracaoBox">R$ 0,00</h2>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <h3>CUSTO ACOMPANHAMENTO R.T.</h3>
+                    <div class="boxFlex">
+                        <div>
+                            <p id="custoRTAcompanhamento">Responsável Técnico: R$ 298,05</p>
+                            <p id="custoRTDeslAcompanhamento">Deslocamento: R$ 298,05</p>
+                        </div>
+                        <h2 id="custoAcompanhamentoBox">R$ 0,00</h2>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <h3>CUSTO MANUTENÇÃO</h3>
+                    <div class="boxFlex">
+                        <div>
+                            <p id="custoTecMan">Técnico Manutenção: R$ 298,05</p>
+                            <p id="custoDeslMan">Deslocamento: R$ 298,05</p>
+                            <p id="custoMatProdutos">Materiais e Produtos: R$ 298,05</p>
+                        </div>
+                        <h2 id="custoManutencaoBox">R$ 0,00</h2>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <h3>OUTROS CUSTOS</h3>
+                    <div class="boxFlex">
+                        <div>
+                            <p id="custoLaboratorio">Laboratório: R$ 298,05</p>
+                            <p id="custoComissao">Comissão: R$ 298,05</p>
+                            <p id="custoImposto">Imposto NF.: R$ 298,05</p>
+                        </div>
+                        <h2 id="outrosCustosBox">R$ 0,00</h2>
+                    </div>
+                </div>
+            
+                
+
+                <div class="box valorBox">
+                    <h3>VALOR PMOC</h3>
+                    <h2 id="valorPmocBox">R$ 0,00</h2>
+                </div>
+                <div class="box lucroBox">
+                    <h3>LUCRO EMPRESA</h3>
+                    <h2 id="lucroEmpresa">R$ 0,00</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="buttonArea">
+            <button onclick="Display.form()" class="positive">Editar</button>
+            <button onclick="Display.form(); limpaValores()" class="positive">Novo Calculo</button>
+        </div>
+    </section>
+
+    <section class="inicial">
+        <div class="leftSide">           
+            <div class="textArea">
+                <h1>Calculadora de Contratos PMOC</h1>
+                <p>Calcule seus contratos com mais precisão.</p>
+            </div>
+        </div>
+        <div class="rightSide">
+            <!-- <h1>SeiPMOC</h1> -->
+            <img class="logo" src="./assets/SeiPMOC.png" alt="Logo">
+            <img class="art"" src="./assets/image.png" alt="">
+            <a onclick="Display.form(); limpar()" class="initialButton" href="#">NOVO CALCULO</a>
+            
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
